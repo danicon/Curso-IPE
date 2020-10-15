@@ -17,9 +17,10 @@ for i in range(0,8):
         
 print(f"A menor temperatura é: {x}\n")
 
-tot = T[0] + T[1] + T[2] + T[3] + T[4] + T[5] + T[6] + T[7] 
+soma = 0
 
-media = tot / 8
+for i in T:
+    soma = soma + i
+media = soma / len(T)
 
 print(f'A média da temperatura é: {media}')
-
